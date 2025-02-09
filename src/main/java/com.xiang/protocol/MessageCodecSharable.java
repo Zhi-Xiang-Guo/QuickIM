@@ -1,8 +1,8 @@
-package cn.itcast.protocol;
+package com.xiang.protocol;
 
-import cn.itcast.config.Config;
-import cn.itcast.message.LoginRequestMessage;
-import cn.itcast.message.Message;
+import com.xiang.config.Config;
+import com.xiang.message.LoginRequestMessage;
+import com.xiang.message.Message;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

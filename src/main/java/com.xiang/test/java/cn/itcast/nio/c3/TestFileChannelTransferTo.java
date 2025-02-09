@@ -1,4 +1,4 @@
-package cn.itcast.nio.c3;
+package com.xiang.nio.c3;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

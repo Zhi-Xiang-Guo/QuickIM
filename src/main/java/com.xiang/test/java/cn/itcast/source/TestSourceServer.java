@@ -1,4 +1,4 @@
-package cn.itcast.source;
+package com.xiang.source;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelInitializer;

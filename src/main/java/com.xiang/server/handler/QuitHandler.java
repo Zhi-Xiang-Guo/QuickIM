@@ -1,6 +1,6 @@
-package cn.itcast.server.handler;
+package com.xiang.server.handler;
 
-import cn.itcast.server.session.SessionFactory;
+import com.xiang.server.session.SessionFactory;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

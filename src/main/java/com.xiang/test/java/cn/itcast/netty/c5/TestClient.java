@@ -1,4 +1,4 @@
-package cn.itcast.netty.c5;
+package com.xiang.netty.c5;
 
 import java.io.*;
 import java.net.Socket;

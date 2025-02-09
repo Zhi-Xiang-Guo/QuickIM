@@ -1,4 +1,4 @@
-package cn.itcast.protocol;
+package com.xiang.protocol;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

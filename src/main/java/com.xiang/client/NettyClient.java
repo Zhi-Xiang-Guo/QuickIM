@@ -1,14 +1,17 @@
-package cn.itcast.client;
+/*
+package com.xiang.client;
 
-import cn.itcast.protocol.ProcotolFrameDecoder;
+import com.xiang.protocol.ProcotolFrameDecoder;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelInitializer;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.timeout.IdleStateHandler;
-import jdk.nashorn.internal.runtime.linker.Bootstrap;
-
+import io.netty.bootstrap.Bootstrap;
+import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -20,7 +23,7 @@ public class NettyClient {
     public void start() throws InterruptedException {
         EventLoopGroup group = new NioEventLoopGroup();
         Bootstrap bootstrap = new Bootstrap();
-        bootstrap.group(group,)
+        bootstrap.group(group)
             .channel(NioSocketChannel.class)
             .handler(new ChannelInitializer<SocketChannel>() {
                 @Override
@@ -52,4 +55,4 @@ public class NettyClient {
             channel.close();
         }
     }
-}
+}*/

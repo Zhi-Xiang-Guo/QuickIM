@@ -1,10 +1,10 @@
-package cn.itcast.netty.c5;
+package com.xiang.netty.c5;
 
-import cn.itcast.config.Config;
-import cn.itcast.message.LoginRequestMessage;
-import cn.itcast.message.Message;
-import cn.itcast.protocol.MessageCodecSharable;
-import cn.itcast.protocol.Serializer;
+import com.xiang.config.Config;
+import com.xiang.message.LoginRequestMessage;
+import com.xiang.message.Message;
+import com.xiang.protocol.MessageCodecSharable;
+import com.xiang.protocol.Serializer;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.channel.embedded.EmbeddedChannel;

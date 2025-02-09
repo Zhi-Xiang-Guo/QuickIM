@@ -1,9 +1,9 @@
-package cn.itcast.server.handler;
+package com.xiang.server.handler;
 
-import cn.itcast.message.LoginRequestMessage;
-import cn.itcast.message.LoginResponseMessage;
-import cn.itcast.server.service.UserServiceFactory;
-import cn.itcast.server.session.SessionFactory;
+import com.xiang.message.LoginRequestMessage;
+import com.xiang.message.LoginResponseMessage;
+import com.xiang.server.service.UserServiceFactory;
+import com.xiang.server.session.SessionFactory;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

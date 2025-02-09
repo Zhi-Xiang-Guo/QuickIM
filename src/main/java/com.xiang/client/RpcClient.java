@@ -1,9 +1,9 @@
-package cn.itcast.client;
+package com.xiang.client;
 
-import cn.itcast.message.RpcRequestMessage;
-import cn.itcast.protocol.MessageCodecSharable;
-import cn.itcast.protocol.ProcotolFrameDecoder;
-import cn.itcast.client.handler.RpcResponseMessageHandler;
+import com.xiang.message.RpcRequestMessage;
+import com.xiang.protocol.MessageCodecSharable;
+import com.xiang.protocol.ProcotolFrameDecoder;
+import com.xiang.client.handler.RpcResponseMessageHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -37,7 +37,7 @@ public class RpcClient {
 
             ChannelFuture future = channel.writeAndFlush(new RpcRequestMessage(
                     1,
-                    "cn.itcast.server.service.HelloService",
+                    "com.xiang.server.service.HelloService",
                     "sayHello",
                     String.class,
                     new Class[]{String.class},

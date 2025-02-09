@@ -1,8 +1,8 @@
-package cn.itcast.server;
+package com.xiang.server;
 
-import cn.itcast.protocol.MessageCodecSharable;
-import cn.itcast.protocol.ProcotolFrameDecoder;
-import cn.itcast.server.handler.RpcRequestMessageHandler;
+import com.xiang.protocol.MessageCodecSharable;
+import com.xiang.protocol.ProcotolFrameDecoder;
+import com.xiang.server.handler.RpcRequestMessageHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;

@@ -1,4 +1,4 @@
-package cn.itcast.server.service;
+package com.xiang.server.service;
 
 /**
  * 用户管理接口

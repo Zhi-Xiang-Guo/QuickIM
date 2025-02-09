@@ -1,6 +1,6 @@
-package cn.itcast.config;
+package com.xiang.config;
 
-import cn.itcast.protocol.Serializer;
+import com.xiang.protocol.Serializer;
 
 import java.io.IOException;
 import java.io.InputStream;

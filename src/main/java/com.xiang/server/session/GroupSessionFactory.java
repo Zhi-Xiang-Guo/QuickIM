@@ -1,4 +1,4 @@
-package cn.itcast.server.session;
+package com.xiang.server.session;
 
 public abstract class GroupSessionFactory {
 

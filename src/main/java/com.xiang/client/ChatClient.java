@@ -1,8 +1,8 @@
-package cn.itcast.client;
+package com.xiang.client;
 
-import cn.itcast.message.*;
-import cn.itcast.protocol.MessageCodecSharable;
-import cn.itcast.protocol.ProcotolFrameDecoder;
+import com.xiang.message.*;
+import com.xiang.protocol.MessageCodecSharable;
+import com.xiang.protocol.ProcotolFrameDecoder;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -14,8 +14,8 @@ import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import io.netty.handler.timeout.IdleStateHandler;
 import lombok.extern.slf4j.Slf4j;
-
-import java.io.IOException;
+import org.springframework.stereotype.Component;
+import javax.annotation.PostConstruct;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -23,9 +23,11 @@ import java.util.Set;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+@Component
 @Slf4j
 public class ChatClient {
-    public static void main(String[] args) {
+    @PostConstruct
+    public void start() throws InterruptedException {
         NioEventLoopGroup group = new NioEventLoopGroup();
         LoggingHandler LOGGING_HANDLER = new LoggingHandler(LogLevel.DEBUG);
         MessageCodecSharable MESSAGE_CODEC = new MessageCodecSharable();

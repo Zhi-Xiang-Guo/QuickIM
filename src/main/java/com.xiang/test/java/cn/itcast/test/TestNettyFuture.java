@@ -1,4 +1,4 @@
-package cn.itcast.test;
+package com.xiang.test;
 
 import io.netty.channel.DefaultEventLoop;
 import io.netty.util.concurrent.DefaultPromise;

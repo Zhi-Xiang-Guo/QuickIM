@@ -1,4 +1,4 @@
-package cn.itcast.test;
+package com.xiang.test;
 
 import io.netty.channel.nio.NioEventLoopGroup;
 import lombok.extern.slf4j.Slf4j;

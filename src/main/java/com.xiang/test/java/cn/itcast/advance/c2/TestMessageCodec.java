@@ -1,7 +1,7 @@
-package cn.itcast.advance.c2;
+package com.xiang.advance.c2;
 
-import cn.itcast.message.LoginRequestMessage;
-import cn.itcast.protocol.MessageCodec;
+import com.xiang.message.LoginRequestMessage;
+import com.xiang.protocol.MessageCodec;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.channel.embedded.EmbeddedChannel;

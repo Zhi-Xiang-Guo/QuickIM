@@ -1,10 +1,10 @@
-package cn.itcast.nio.c2;
+package com.xiang.nio.c2;
 
 
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 
-import static cn.itcast.nio.c2.ByteBufferUtil.debugAll;
+import static com.xiang.nio.c2.ByteBufferUtil.debugAll;
 
 public class TestByteBufferString {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package cn.itcast.server.service;
+package com.xiang.server.service;
 
-import cn.itcast.config.Config;
+import com.xiang.config.Config;
 
 import java.io.IOException;
 import java.io.InputStream;

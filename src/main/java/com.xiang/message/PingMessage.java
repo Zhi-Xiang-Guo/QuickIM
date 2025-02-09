@@ -1,4 +1,4 @@
-package cn.itcast.message;
+package com.xiang.message;
 
 public class PingMessage extends Message {
     @Override

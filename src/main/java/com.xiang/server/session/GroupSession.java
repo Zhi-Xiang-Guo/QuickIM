@@ -1,4 +1,4 @@
-package cn.itcast.server.session;
+package com.xiang.server.session;
 
 import io.netty.channel.Channel;
 

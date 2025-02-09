@@ -1,4 +1,4 @@
-package cn.itcast.netty.c3;
+package com.xiang.netty.c3;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;

@@ -1,9 +1,9 @@
-package cn.itcast.server.handler;
+package com.xiang.server.handler;
 
-import cn.itcast.message.GroupJoinResponseMessage;
-import cn.itcast.message.GroupQuitRequestMessage;
-import cn.itcast.server.session.Group;
-import cn.itcast.server.session.GroupSessionFactory;
+import com.xiang.message.GroupJoinResponseMessage;
+import com.xiang.message.GroupQuitRequestMessage;
+import com.xiang.server.session.Group;
+import com.xiang.server.session.GroupSessionFactory;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

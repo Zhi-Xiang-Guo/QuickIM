@@ -1,6 +1,6 @@
-package cn.itcast.protocol;
+package com.xiang.protocol;
 
-import cn.itcast.message.Message;
+import com.xiang.message.Message;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

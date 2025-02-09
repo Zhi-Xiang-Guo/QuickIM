@@ -1,4 +1,4 @@
-package cn.itcast.test;
+package com.xiang.test;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;

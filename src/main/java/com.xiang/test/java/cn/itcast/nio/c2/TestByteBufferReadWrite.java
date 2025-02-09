@@ -1,8 +1,8 @@
-package cn.itcast.nio.c2;
+package com.xiang.nio.c2;
 
 import java.nio.ByteBuffer;
 
-import static cn.itcast.nio.c2.ByteBufferUtil.debugAll;
+import static com.xiang.nio.c2.ByteBufferUtil.debugAll;
 
 public class TestByteBufferReadWrite {
     public static void main(String[] args) {

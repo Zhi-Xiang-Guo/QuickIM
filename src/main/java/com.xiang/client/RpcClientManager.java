@@ -1,11 +1,11 @@
-package cn.itcast.client;
+package com.xiang.client;
 
-import cn.itcast.client.handler.RpcResponseMessageHandler;
-import cn.itcast.message.RpcRequestMessage;
-import cn.itcast.protocol.MessageCodecSharable;
-import cn.itcast.protocol.ProcotolFrameDecoder;
-import cn.itcast.protocol.SequenceIdGenerator;
-import cn.itcast.server.service.HelloService;
+import com.xiang.client.handler.RpcResponseMessageHandler;
+import com.xiang.message.RpcRequestMessage;
+import com.xiang.protocol.MessageCodecSharable;
+import com.xiang.protocol.ProcotolFrameDecoder;
+import com.xiang.protocol.SequenceIdGenerator;
+import com.xiang.server.service.HelloService;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;

@@ -1,14 +1,12 @@
-package cn.itcast.server;
+package com.xiang.server;
 
-import cn.itcast.message.GroupJoinRequestMessage;
-import cn.itcast.protocol.MessageCodecSharable;
-import cn.itcast.protocol.ProcotolFrameDecoder;
-import cn.itcast.server.handler.*;
+import com.xiang.message.GroupJoinRequestMessage;
+import com.xiang.protocol.MessageCodecSharable;
+import com.xiang.protocol.ProcotolFrameDecoder;
+import com.xiang.server.handler.*;
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelDuplexHandler;
-import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelInitializer;
+import io.netty.buffer.PooledByteBufAllocator;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -23,7 +21,8 @@ import lombok.extern.slf4j.Slf4j;
 public class ChatServer {
     public static void main(String[] args) {
         NioEventLoopGroup boss = new NioEventLoopGroup();
-        NioEventLoopGroup worker = new NioEventLoopGroup();
+        //workerGroup = CPU 核心数 * 2（尽量利用 CPU）
+        NioEventLoopGroup worker = new NioEventLoopGroup(Runtime.getRuntime().availableProcessors() * 2);
         LoggingHandler LOGGING_HANDLER = new LoggingHandler(LogLevel.DEBUG);
         MessageCodecSharable MESSAGE_CODEC = new MessageCodecSharable();
         LoginRequestMessageHandler LOGIN_HANDLER = new LoginRequestMessageHandler();
@@ -36,8 +35,13 @@ public class ChatServer {
         QuitHandler QUIT_HANDLER = new QuitHandler();
         try {
             ServerBootstrap serverBootstrap = new ServerBootstrap();
-            serverBootstrap.channel(NioServerSocketChannel.class);
+//          serverBootstrap.channel(EpollServerSocketChannel.class);
+            serverBootstrap
+                    .channel(NioServerSocketChannel.class)
+                    .option(ChannelOption.TCP_NODELAY, true);//禁用Nagle 算法
             serverBootstrap.group(boss, worker);
+            //使用 Netty PooledByteBufAllocator 避免频繁 GC
+            serverBootstrap.option(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT);
             serverBootstrap.childHandler(new ChannelInitializer<SocketChannel>() {
                 @Override
                 protected void initChannel(SocketChannel ch) throws Exception {

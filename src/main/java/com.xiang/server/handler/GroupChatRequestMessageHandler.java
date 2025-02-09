@@ -1,8 +1,8 @@
-package cn.itcast.server.handler;
+package com.xiang.server.handler;
 
-import cn.itcast.message.GroupChatRequestMessage;
-import cn.itcast.message.GroupChatResponseMessage;
-import cn.itcast.server.session.GroupSessionFactory;
+import com.xiang.message.GroupChatRequestMessage;
+import com.xiang.message.GroupChatResponseMessage;
+import com.xiang.server.session.GroupSessionFactory;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

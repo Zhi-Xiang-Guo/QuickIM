@@ -1,4 +1,4 @@
-package cn.itcast.netty.c3;
+package com.xiang.netty.c3;
 
 import lombok.extern.slf4j.Slf4j;
 

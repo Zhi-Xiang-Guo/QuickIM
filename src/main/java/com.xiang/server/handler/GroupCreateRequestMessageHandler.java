@@ -1,10 +1,10 @@
-package cn.itcast.server.handler;
+package com.xiang.server.handler;
 
-import cn.itcast.message.GroupCreateRequestMessage;
-import cn.itcast.message.GroupCreateResponseMessage;
-import cn.itcast.server.session.Group;
-import cn.itcast.server.session.GroupSession;
-import cn.itcast.server.session.GroupSessionFactory;
+import com.xiang.message.GroupCreateRequestMessage;
+import com.xiang.message.GroupCreateResponseMessage;
+import com.xiang.server.session.Group;
+import com.xiang.server.session.GroupSession;
+import com.xiang.server.session.GroupSessionFactory;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

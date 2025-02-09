@@ -1,4 +1,4 @@
-package cn.itcast.server.service;
+package com.xiang.server.service;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

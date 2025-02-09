@@ -1,7 +1,7 @@
-package cn.itcast.client.handler;
+package com.xiang.client.handler;
 
-import cn.itcast.message.RpcRequestMessage;
-import cn.itcast.message.RpcResponseMessage;
+import com.xiang.message.RpcRequestMessage;
+import com.xiang.message.RpcResponseMessage;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

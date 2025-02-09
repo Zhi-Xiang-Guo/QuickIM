@@ -1,4 +1,4 @@
-package cn.itcast.advance.c1;
+package com.xiang.advance.c1;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;

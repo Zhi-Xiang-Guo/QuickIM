@@ -1,4 +1,4 @@
-package cn.itcast.message;
+package com.xiang.message;
 
 import lombok.Data;
 import lombok.ToString;

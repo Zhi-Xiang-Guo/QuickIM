@@ -1,4 +1,4 @@
-package cn.itcast.advance.c2;
+package com.xiang.advance.c2;
 
 import java.util.Collections;
 

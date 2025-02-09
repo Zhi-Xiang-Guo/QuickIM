@@ -1,11 +1,11 @@
-package cn.itcast.nio.c2;
+package com.xiang.nio.c2;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-import static cn.itcast.nio.c2.ByteBufferUtil.debugAll;
+import static com.xiang.nio.c2.ByteBufferUtil.debugAll;
 
 public class TestScatteringReads {
     public static void main(String[] args) {

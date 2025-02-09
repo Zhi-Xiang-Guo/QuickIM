@@ -1,9 +1,9 @@
-package cn.itcast.server.handler;
+package com.xiang.server.handler;
 
-import cn.itcast.message.RpcRequestMessage;
-import cn.itcast.message.RpcResponseMessage;
-import cn.itcast.server.service.HelloService;
-import cn.itcast.server.service.ServicesFactory;
+import com.xiang.message.RpcRequestMessage;
+import com.xiang.message.RpcResponseMessage;
+import com.xiang.server.service.HelloService;
+import com.xiang.server.service.ServicesFactory;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -37,7 +37,7 @@ public class RpcRequestMessageHandler extends SimpleChannelInboundHandler<RpcReq
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         RpcRequestMessage message = new RpcRequestMessage(
                 1,
-                "cn.itcast.server.service.HelloService",
+                "com.xiang.server.service.HelloService",
                 "sayHello",
                 String.class,
                 new Class[]{String.class},

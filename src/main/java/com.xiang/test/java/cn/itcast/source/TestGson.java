@@ -1,6 +1,6 @@
-package cn.itcast.source;
+package com.xiang.source;
 
-import cn.itcast.protocol.Serializer;
+import com.xiang.protocol.Serializer;
 import com.google.gson.*;
 
 import java.lang.reflect.Type;

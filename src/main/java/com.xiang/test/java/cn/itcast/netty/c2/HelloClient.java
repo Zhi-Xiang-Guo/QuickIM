@@ -1,4 +1,4 @@
-package cn.itcast.netty.c2;
+package com.xiang.netty.c2;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelInitializer;
