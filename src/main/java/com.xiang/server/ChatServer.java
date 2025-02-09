@@ -20,6 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class ChatServer {
     public static void main(String[] args) {
+        //to tset
         NioEventLoopGroup boss = new NioEventLoopGroup();
         //workerGroup = CPU 核心数 * 2（尽量利用 CPU）
         NioEventLoopGroup worker = new NioEventLoopGroup(Runtime.getRuntime().availableProcessors() * 2);
